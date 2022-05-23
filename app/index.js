@@ -2,7 +2,7 @@ const app = require('express')();
 
 let memory = {}
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     res.send(memory);
     memory.last = new Date().toDateString();
 })
